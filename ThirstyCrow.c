@@ -25,7 +25,7 @@ int ThirstyCrowProblem(int input1[],int input2,int input3)
 			out += input1[i];
 			j = input1[i];
 		}
-		else
+		else if(j != input1[i])
 			out += j;
 	}
 	return out;
@@ -35,7 +35,7 @@ int main()
 {
 	int input1[] = {5,58,10};
 	int input2 = 3;
-	int input3 = 2;
+	int input3 = 1;
 	printf("Output : %d\n",ThirstyCrowProblem(input1,input2,input3));
 	return 0;
 }
